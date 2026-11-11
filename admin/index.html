@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Posterium Admin</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="admin.css">
+</head>
+<body>
+<div id="login" hidden>
+  <span class="logo" style="justify-self:start">posterium.</span>
+  <h1>Admin giriş</h1>
+  <form id="lf">
+    <label>İstifadəçi adı<input id="u" autocomplete="username" required></label>
+    <label>Parol<input id="pw" type="password" autocomplete="current-password" required></label>
+    <p class="msg e" id="le" role="alert"></p>
+    <button class="btn" type="submit">Daxil ol</button>
+  </form>
+</div>
+
+<div id="app" hidden><div class="wrap">
+  <div class="bar"><span class="logo">posterium. admin</span><span><a class="btn ghost small" href="/" target="_blank">Sayta bax</a> <button class="btn ghost small" id="out">Çıxış</button></span></div>
+  <section class="box">
+    <h2>Yeni poster</h2>
+    <div class="add">
+      <label>Ad<input id="nt" placeholder="Poster adı"></label>
+      <div class="r">
+        <label>Kateqoriya<select id="nc"></select></label>
+        <label>Qiymət (₼)<input id="np" type="number" min="0" step="0.5"></label>
+      </div>
+      <label>Təsvir<textarea id="nd" rows="2"></textarea></label>
+      <label>Şəkil (JPG, PNG, WEBP)<input id="ni" type="file" accept="image/jpeg,image/png,image/webp"></label>
+      <button class="btn" id="add">Poster əlavə et</button>
+    </div>
+  </section>
+  <p class="msg" id="st" role="status"></p>
+  <h2>Posterlər</h2>
+  <div class="list" id="list"></div>
+</div></div>
+<script src="admin.js"></script>
+</body>
+</html>

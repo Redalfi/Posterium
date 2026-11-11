@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Posterium – Posterlər və tablolar</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+<header><div class="wrap">
+  <a class="logo" href="/" aria-label="Posterium">posterium.</a>
+  <nav aria-label="Əsas menyu"><a href="#kolleksiya">Posterlər</a><a href="#nece">Necə işləyir</a><a href="#sifaris">Sifariş</a><a href="#faq">Suallar</a></nav>
+  <a class="btn" href="#sifaris">Sifariş ver</a>
+</div></header>
+
+<main>
+<section class="hero" style="padding:0"><div class="wrap">
+  <div>
+    <h1>Divarınıza xarakter qatan posterlər</h1>
+    <p class="lead">İstənilən zövqdə posterlər, A1-dən A4-ə qədər çap, keyfiyyətli poster kağızı və çərçivə. Bakı daxili çatdırılma.</p>
+    <div class="cta"><a class="btn" href="#sifaris">Sifariş ver</a><a class="btn ghost" href="#kolleksiya">Posterlərə bax</a></div>
+  </div>
+  <div class="wall" role="img" aria-label="Divarda çərçivəli posterlər">
+    <div class="frame f1"><i class="g1"></i></div><div class="frame f2"><i class="g2"></i></div><div class="frame f3"><i class="g3"></i></div>
+  </div>
+</div></section>
+
+<section id="kolleksiya"><div class="wrap">
+  <div class="head"><h2>Posterlər</h2><p>Bəyəndiyinizi seçin və ya fərdi poster sifariş edin.</p></div>
+  <div class="chips" id="chips"></div>
+  <div class="grid" id="grid"><p class="msg">Yüklənir...</p></div>
+</div></section>
+
+<section id="nece" style="padding-top:0"><div class="wrap">
+  <div class="head"><h2>Necə işləyir</h2></div>
+  <ol class="steps">
+    <li><h3>Poster seçin</h3><p>Siyahıdan seçin və ya fərdi dizayn ideyanızı yazın.</p></li>
+    <li><h3>Ölçü və çərçivəni seçin</h3><p>A4, A3, A2 və ya A1. Çərçivəli və ya çərçivəsiz.</p></li>
+    <li><h3>Sifarişi göndərin</h3><p>Formu doldurun, sifariş WhatsApp-da bizə çatsın. Biz təsdiqləyib çatdırırıq.</p></li>
+  </ol>
+</div></section>
+
+<section class="order" id="sifaris"><div class="wrap">
+  <div>
+    <h2>Sifariş ver</h2>
+    <p style="color:var(--muted);margin-top:.8rem">Formu doldurun, hazır mesaj WhatsApp-da açılacaq. Ünvanı və ödənişi orada dəqiqləşdiririk.</p>
+    <ul class="facts">
+      <li><b>Ölçülər:</b> A4, A3, A2, A1</li>
+      <li><b>Material:</b> keyfiyyətli poster kağızı, istəyə görə çərçivə</li>
+      <li><b>Çatdırılma:</b> Bakı daxili</li>
+    </ul>
+  </div>
+  <form id="f" novalidate>
+    <div class="row">
+      <label>Adınız<input name="ad" autocomplete="name" required></label>
+      <label>Telefon<input name="tel" type="tel" autocomplete="tel" placeholder="050 000 00 00" required></label>
+    </div>
+    <label>Hansı poster?<input name="poster" placeholder="Poster adı və ya fərdi ideya" required></label>
+    <div class="row">
+      <label>Ölçü<select name="olcu"><option>A4</option><option selected>A3</option><option>A2</option><option>A1</option></select></label>
+      <label>Çərçivə<select name="cerceve"><option>Çərçivə ilə</option><option>Çərçivəsiz</option></select></label>
+    </div>
+    <label>Qeyd (istəyə bağlı)<textarea name="qeyd" rows="3"></textarea></label>
+    <p class="msg e" id="fm" role="alert"></p>
+    <div class="cta">
+      <button class="btn" type="submit">WhatsApp ilə göndər</button>
+      <a class="btn ghost" href="https://ig.me/m/posterium.az" target="_blank" rel="noopener">Instagram-da yaz</a>
+    </div>
+  </form>
+</div></section>
+
+<section id="faq"><div class="wrap">
+  <div class="head"><h2>Tez-tez verilən suallar</h2></div>
+  <details><summary>Fərdi poster necə sifariş edilir?</summary><p>Formda “Hansı poster?” xanasına ideyanızı yazın və şəkil varsa WhatsApp-da göndərin. Dizaynı sizinlə razılaşdırırıq.</p></details>
+  <details><summary>Hansı ölçülər var?</summary><p>A1-dən A4-ə qədər bütün standart formatlarda çap edirik.</p></details>
+  <details><summary>Çatdırılma haradadır?</summary><p>Bakı daxili çatdırılma var. Müddət və qiymət sifariş zamanı dəqiqləşdirilir.</p></details>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <span>© Posterium. Posterlər | Tablolar</span>
+  <a href="https://www.instagram.com/posterium.az/" target="_blank" rel="noopener">@posterium.az</a>
+</div></footer>
+<script src="/js/site.js"></script>
+</body>
+</html>
